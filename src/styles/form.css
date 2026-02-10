@@ -110,6 +110,7 @@ select {
 .checkbox-container > label {
   font-weight: 400;
   margin-left: 1.2em;
+  cursor: pointer;
 }
 
 /*Styling for checkbox*/
