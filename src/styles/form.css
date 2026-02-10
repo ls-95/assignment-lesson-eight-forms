@@ -20,7 +20,6 @@ body {
   padding: 2em 0;
   width: 100%;
   margin: 0 auto;
-  /* height: 80vh; */
   background-color: white;
   border-radius: 7px;
   border: 5px solid blueviolet;
@@ -46,7 +45,7 @@ form,
   display: flex;
   flex-direction: column;
 }
-
+/*Input styling*/
 input,
 select,
 textarea {
@@ -61,17 +60,24 @@ textarea {
   border-radius: 5px;
 }
 
+label {
+  font-weight: bold;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: rgb(161, 161, 161);
 }
 
-label {
-  font-weight: bold;
-}
+/*Styling for dropdown*/
 
 .select-container {
   position: relative;
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
 }
 
 .icon {
@@ -82,11 +88,7 @@ label {
   pointer-events: none;
 }
 
-select {
-  cursor: pointer;
-  appearance: none;
-}
-
+/*Styling for checkbox*/
 .checkbox-container {
   margin-bottom: 1.875em;
 }
@@ -95,6 +97,7 @@ select {
   font-weight: 400;
 }
 
+/*Styling for checkbox*/
 button {
   padding: 10px 20px;
   background-color: blueviolet;
@@ -117,6 +120,7 @@ button:active {
   background-color: rgb(122, 15, 222);
 }
 
+/*Field required*/
 .red {
   color: red;
 }

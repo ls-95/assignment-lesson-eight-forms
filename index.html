@@ -21,8 +21,10 @@
     <div class="container">
       <h2>. Book a Consultation .</h2>
       <form action="/">
+        <!-- Input for customer name -->
         <label for="name">Name:<span class="red">*</span></label>
         <input type="text" id="name" placeholder="Ex: John Smith" required />
+        <!-- Input for customer email -->
         <label for="email">Email:<span class="red">*</span></label>
         <input
           type="email"
@@ -30,6 +32,7 @@
           placeholder="Ex: johnsmith@gmail.com"
           required
         />
+        <!-- Input for customer phone number -->
         <label for="phone">Phone: (Optional)</label>
         <input
           type="tel"
@@ -37,8 +40,8 @@
           name="phone"
           pattern="[0-9]{10}"
           placeholder="Ex: 0712345678"
-          required
         />
+        <!-- Input for customer address -->
         <label for="address">Address:<span class="red">*</span></label>
         <input
           type="text"
@@ -46,6 +49,7 @@
           placeholder="Ex: 1 Santa Lane"
           required
         />
+        <!-- Dropdown to chose country of residence -->
         <div class="select-container">
           <label for="country">Country:<span class="red">*</span></label>
           <i class="fa-regular fa-hand-point-down icon"></i>
@@ -57,8 +61,10 @@
             <option value="Other">Other</option>
           </select>
         </div>
+        <!-- Input for customer post code -->
         <label for="post-code">Post Code:<span class="red">*</span></label>
         <input type="text" pattern="[0-9]{5}" id="post-code" required />
+        <!-- Input for additional information -->
         <label for="message">Message:</label>
         <textarea
           name="message"
@@ -66,8 +72,10 @@
           rows="5"
           placeholder="Any additional information"
         ></textarea>
+        <!-- Newsletter option - checkbox -->
         <div class="checkbox-container">
           <input type="checkbox" id="newsletter" checked />
+          <i class="fa-regular fa-circle-check"></i>
           <label for="newsletter">Sign up to our imaginary newsletter!</label>
         </div>
         <button type="submit">Submit</button>
