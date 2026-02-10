@@ -27,6 +27,7 @@
         <!-- Input for customer name -->
         <label for="name">Full name:<span class="red">*</span></label>
         <input type="text" id="name" placeholder="Ex: John Smith" required />
+
         <!-- Input for customer email -->
         <label for="email">Email:<span class="red">*</span></label>
         <input
@@ -35,6 +36,7 @@
           placeholder="Ex: johnsmith@gmail.com"
           required
         />
+
         <!-- Input for customer phone number -->
         <label for="phone">Phone: (Optional)</label>
         <input
@@ -44,6 +46,7 @@
           pattern="[0-9]{10}"
           placeholder="Ex: 0712345678"
         />
+
         <!-- Input for customer address -->
         <label for="address">Address:<span class="red">*</span></label>
         <input
@@ -52,6 +55,7 @@
           placeholder="Ex: 1 Santa Lane"
           required
         />
+
         <!-- Dropdown to chose country of residence -->
         <div class="select-container">
           <label for="country">Country:<span class="red">*</span></label>
@@ -63,9 +67,11 @@
             <option value="Denmark">Denmark</option>
           </select>
         </div>
+
         <!-- Input for customer post code -->
         <label for="post-code">Post Code:<span class="red">*</span></label>
         <input type="text" pattern="[0-9]{5}" id="post-code" required />
+
         <!-- Input for additional information -->
         <label for="message">Message:</label>
         <textarea
@@ -74,11 +80,13 @@
           rows="5"
           placeholder="Any additional information"
         ></textarea>
+
         <!-- Newsletter option - checkbox -->
         <div class="checkbox-container">
           <input type="checkbox" id="newsletter" checked />
           <label for="newsletter">Sign up to our super real newsletter!</label>
         </div>
+
         <button type="submit">Submit</button>
       </form>
     </div>
